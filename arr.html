@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        </head>
+        <body>
+          <button onclick="arrays_1()">Initial one</button><br>
+          <input type="text" id="textbox"><br>
+          <button onclick="arraydemo()">click to push</button><br>
+          <button onclick="arraypop()">click to pop</button><br>
+          <button onclick="print2d()">click to 2d</button><br>
+
+        <script>
+            var arr=[1,2]
+            function arrays_1(){
+                console.log(arr)
+                for(i=0;i<arr.length;i++){
+                    console.log("the element at index"+i+"is the"+arr[i])
+                }
+
+            }
+            function arraydemo(){
+                var x=document.getElementById("textbox").value
+                arr.push(x)
+                console.log(arr)
+            }
+            function arraypop(){
+                arr.pop()
+                console.log("after poping"+arr)
+            }
+            
+            var arr1=[
+                     [2,3],
+                     [4,5],
+                     [7,9]
+                    ]
+            function print2d(){
+                for(let row=0;row<arr1.length;row++){
+                  for(let col=0;col<arr1[col].length-1;col++){
+                     console.log(arr1[[row][col]])
+                    }
+                }
+            }
+            const students=['sai','kumar','jaswanth']
+             students.forEach(student => {
+                console.log(`the student name is ${student}`)
+                
+            });
+             var arr2=[]
+             for(let i=0;i<100;i++){
+               let randomNumber=Math.floor(Math.random()*100)
+               arr2.push(randomNumber)
+                 
+             }
+             console.log(arr2)
+             let y=arr2.filter(number=>{
+               
+                    return number>50;
+                
+             })
+             console.log(y)
+            
+             let x=arr2.filter(number=>{
+                if(number%2==0){
+                    return number;
+                }
+             })
+             console.log(x)
+             let d=30;
+             let e='sai';
+             let f=true
+             console.log(typeof(d));
+             console.log(typeof(e));
+             console.log(typeof(f));
+             var student={};
+             console.log(typeof(student))
+             var student;
+             console.log(typeof(student))
+             student.name='sai';
+             student.roll='90';
+             console.log(typeof(student))
+             const person={
+                person.firstname='sai',
+                person.lastname='kanneti',
+                person.age='20',
+                person.color='blue'
+                
+             }
+             console.log(typeof(person))
+             
+        </script>
+        </body>
+    
+</html>

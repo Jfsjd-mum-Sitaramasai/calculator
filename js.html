@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+    <body>
+        <div class="container-1">
+        Input-1:  
+        <p id="n1"><input type="text"></p>
+        Input-2:
+        <p id="n2"><input type="text"></p>
+        Result:
+        <p id="result"><input type="text"></p>
+        <div class="container-2">
+        <input type="text" placeholder="input1" id="number1">
+        <input type="text" placeholder="input2"  id="number2">
+        </div>
+        <div class="container-3">
+        <button onclick="addition()">Add</button>
+        <button onclick="subtraction()">Sub</button>
+        <button onclick="multiplication()">Mul</button>
+        <button onclick="division()">Div</button>
+        <button onclick="power()">Pow</button>
+        </div>
+        </div>
+
+        <script>
+            function addition()
+            {
+              var x =document.getElementById("number1").value
+              
+              var y=document.getElementById("number2").value
+              document.getElementById("n1").innerHTML = x
+              document.getElementById("n2").innerHTML = y
+             
+              x1=Number(x)
+              y1=Number(y)
+              
+              document.getElementById("result").innerHTML = x1+y1
+            }
+            function subtraction()
+            {
+              var x =document.getElementById("number1").value
+              
+              var y=document.getElementById("number2").value
+              document.getElementById("n1").innerHTML = x
+              document.getElementById("n2").innerHTML = y
+            
+              x1=Number(x)
+              y1=Number(y)
+              
+              document.getElementById("result").innerHTML=x1-y1
+
+            }
+            function multiplication()
+            {
+              var x =document.getElementById("number1").value
+              
+              var y=document.getElementById("number2").value
+              document.getElementById("n1").innerHTML = x
+              document.getElementById("n2").innerHTML = y
+              
+              x1=Number(x)
+              y1=Number(y)
+             
+              document.getElementById("result").innerHTML=x1*y1
+            }
+            function division()
+            {
+              var x =document.getElementById("number1").value
+              
+              
+              var y=document.getElementById("number2").value
+              document.getElementById("n1").innerHTML = x
+              document.getElementById("n2").innerHTML = y
+              
+              x1=Number(x)
+              y1=Number(y)
+            
+              document.getElementById("result").innerHTML=x1/y1
+            }
+            function power()
+            {
+              var x =document.getElementById("number1").value
+            
+              
+              var y=document.getElementById("number2").value
+              document.getElementById("n1").innerHTML = x
+              document.getElementById("n2").innerHTML = y
+              x1=Number(x)
+              y1=Number(y)
+             
+              document.getElementById("result").innerHTML=Math.pow(x1,y1)
+            }
+
+            
+
+            
+
+        </script>
+            
+    </body>
+</html>
